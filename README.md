@@ -7,7 +7,7 @@ Draft project for detecting a person's race with simple convolutional neural net
 2. Unzip data_faces.zip.
 3. Run model on any image:
 ```
-python predict.py --img_path jackie.jpg
+python predict.py --img_path jackie_chan.jpg
 ```
 4. You can evaluate model on dataset:
 ```
@@ -20,17 +20,10 @@ python train.py
 
 ## Dataset
 
-If you need the dataset please send to me message on buliginleo @ yandex.ru
+Dataset contains 12 513 cropped images of faces. Training set - 10060 images, test set - 2513 images. Classes are distributed almost uniformly.
 
-### Results:
+My implementation reached 66% accuracy.
 
-| Class_mode  | Accuracy |
-| ------------- | ------------- |
-| 2 classes (erotic_and porn, legal)  | 0.8946  |
-| 3 classes (erotic, porn, legal) | 0.7300 |
+## Face detector
 
-### Classes:
-
-* Legal - images without naked people
-* Erotic - images with half-naked people (for example, in swimsuits)
-* Porn - images with completely naked people or sex scenes
+I used the face detector from OpenCV (haarcascade_frontalface_default.xml).
