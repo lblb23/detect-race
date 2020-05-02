@@ -20,7 +20,7 @@ python train.py
 
 ## Dataset
 
-Dataset contains 12 513 cropped images of faces. Training set - 10 060 images, test set - 2 513 images. Classes are distributed almost uniformly.
+Dataset (data_faces.zip) contains 12 513 cropped images of faces. Training set - 10 060 images, test set - 2 513 images. Classes are distributed almost uniformly.
 
 My implementation reached 66% accuracy.
 
